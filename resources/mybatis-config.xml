@@ -3,12 +3,14 @@
 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+	<!-- 引入资源文件 -->
+	<properties resource="database.properties"></properties>
 	<settings>
 		<!-- 配置日志、log，实现LOG4j -->
 		<setting name="logImlp" value="LOG4j" />
 	</settings>
 	<typeAliases>
-		<package name="" />
+		<package name="cn.easybuy.entity" />
 	</typeAliases>
 	<environments default="development">
 		<environment id="developmeng">
@@ -22,6 +24,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="" />
+		<mapper resource="cn/easybuy/dao/user/UserMapper.xml" />
 	</mappers>
 </configuration>
