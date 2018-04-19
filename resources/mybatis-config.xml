@@ -24,6 +24,12 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="cn/easybuy/dao/user/UserMapper.xml" />
+		<mapper resource="cn/easybuy/mapper/newsMapper.xml" />
+		<mapper resource="cn/easybuy/mapper/orderDetailMapper.xml" />
+		<mapper resource="cn/easybuy/mapper/orderMapper.xml" />
+		<mapper resource="cn/easybuy/mapper/productCategroyMapper.xml" />
+		<mapper resource="cn/easybuy/mapper/productMapper.xml" />
+		<mapper resource="cn/easybuy/mapper/userAddressMapper.xml" />
+		<mapper resource="cn/easybuy/mapper/userMapper.xml" />
 	</mappers>
 </configuration>

@@ -3,6 +3,8 @@ package cn.easybuy.mapper;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Param;
+
 import cn.easybuy.entity.Product;
 
 /**
@@ -25,7 +27,7 @@ public interface ProductMapper {
 	 * @param product
 	 * @return
 	 */
-	int add(Product product);
+	int add(Product product,@Param("isDelete")Integer isDelete);
 	
 	/**
 	 * 更新商品
